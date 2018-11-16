@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>测试index</title>
+</head>
+<body>
+<h1 >Hello World</h1>
+<h1 th:text="${host}"></h1>
+<h1 th:text="${list}"></h1>
+<h1 >Hello World123123</h1>
+
+<table border="1">
+	<tr th:each="m : ${list}"><!-- 其中m是个临时变量，像for(User u : userList)那样中的u-->
+		<td th:text="${m.id}"/>
+		<td th:text="${m.id}"/>
+	</tr>
+</table>
+
+</body>
+</html>
